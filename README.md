@@ -1,0 +1,3 @@
+# Firts
+
+This is the beginning of a Sale`s System...
