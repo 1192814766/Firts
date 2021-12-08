@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SalesSystem.Models;
 using System;
@@ -11,15 +13,16 @@ namespace SalesSystem.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        IServiceProvider _serviceProvider;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IServiceProvider serviceProvider)
         {
-            _logger = logger;
+            _serviceProvider = serviceProvider;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            await CreateRole(_serviceProvider);
             return View();
         }
 
@@ -32,6 +35,20 @@ namespace SalesSystem.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        private async Task CreateRole(IServiceProvider serviceProvider)
+        {
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            String[] rolesName = { "Admin", "User" };
+            foreach (var item in rolesName)
+            {
+                var roleExist = await roleManager.RoleExistsAsync(item);
+                if (!roleExist)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(item));
+                }
+            }
         }
     }
 }
