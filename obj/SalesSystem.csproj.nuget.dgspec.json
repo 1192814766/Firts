@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\SalesSystem.csproj": {}
+    "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\SalesSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\SalesSystem.csproj": {
+    "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\SalesSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\SalesSystem.csproj",
+        "projectUniqueName": "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\SalesSystem.csproj",
         "projectName": "SalesSystem",
-        "projectPath": "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\SalesSystem.csproj",
+        "projectPath": "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\SalesSystem.csproj",
         "packagesPath": "C:\\Users\\lizus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\obj\\",
+        "outputPath": "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

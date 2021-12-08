@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ieq8PxvTM5ilatpwc58bF1if1T8NDeIxYPKROyWEFa4xtJH8eYLDG2rkkMNhKxBr6UHm6qFf+w4b5zhO0DAnYw==",
+  "dgSpecHash": "5pimwZM/KKKg+a0xCPL/C+6Rbw4tkPMYLYNlpRGafn1la5H1StLp++5np1VIyhGLj4ybMvcLZNpjTxBo6yWCGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lizus\\source\\repos\\SalesSystem\\SalesSystem\\SalesSystem.csproj",
+  "projectFilePath": "C:\\Users\\lizus\\Desktop\\Proyectos\\Firts\\SalesSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lizus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\lizus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",
